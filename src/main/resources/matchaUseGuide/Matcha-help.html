@@ -1,0 +1,50 @@
+<p>Matcha helps you identify data collection and sharing that needs to be disclosed on your app's Google data safety section label. You need to add privacy annotations and modify the library configuration file to provide information about your apps' data practices.</p>
+<br>
+<b>What is a privacy annotation?</b>
+<br>
+Privacy annotations are structured metadata that embeds privacy information such as data use purposes directly in code.
+<br>
+For example, <span style="color:#937C00;">@DataAccess</span> annotation is used to indicate what personal data is accessed by your client app,
+the <span style="color:#937C00;">@DataTransmission</span> annotation is used to indicate how personal data is used after leaving your client app (e.g., sent out to the network or shared with another app on the device).
+<br>
+<br>
+Privacy annotation examples:
+<table>
+    <tr>
+        <td>
+            <img src="https://user-images.githubusercontent.com/7195867/176569229-9ea0445f-296c-4cf3-a562-831904f81adc.png" alt="Data access annotation example" width="400">
+        </td>
+        <td>
+            <img src="https://user-images.githubusercontent.com/7195867/176569315-8c391fe8-b207-4450-ac60-5f86684d5f84.png" alt="Data transmission annotation example" width="450">
+        </td>
+    </tr>
+</table>
+<br>
+<br>
+<b>How to add a required annotations (Step 1 and 3)</b>
+<br>
+Go to the detected API call, click on the API call, and then click on the light bulb or use the shortcut option + enter to show all available quick-fixes, select and apply the quick-fix that best matches the behavior of the API call. This will add a partially-filled annotation template, and you can use more tooltips and quick-fixes around the annotation to check out the meaning of the predefined fields and values and complete the annotation.
+<br>
+<br>
+Quickfix example:
+<br>
+<img src="https://user-images.githubusercontent.com/7195867/176572126-46ca0f38-627e-43ce-a8ba-ec6c7184b2db.png" alt="Add required annotation quickfix example" width="600">
+<br>
+<br>
+<b>How to manually add an annotation (Step 2 and 4)</b>
+Since the detected API calls may not cover all data usage, you can also manually annotate variables that hold user data when it's first obtained by the app and variables that are associated with data transmission.
+Similarly, Matcha provides intention actions to help you add partially filled annotation templates. To use intention actions, first click on the name of a local variable/class field/method parameter/class name/method name, and then click on the light bulb icon or use the shortcut option + enter to evoke the intention action list.
+<br>
+<br>
+Intention action example:
+<br>
+<img src="https://user-images.githubusercontent.com/7195867/176572921-064bce0c-07e0-456a-92fa-546638ebc2be.png" alt="Add additional annotation intention action example" width="600">
+<br>
+<br>
+<b>How to verify library data usage config (Step 5)</b>
+Matcha also detects libraries that collect or share user data on their own and automatically fill out data that is always collected/shared by the library. For data collection/sharing behavior depending on how your app uses the library, you need to further specify them in the auto-generated configuration file "library_safety_section_config.xml". Matcha will add a tag for each detected library in this xml file and list all the possible data collection/sharing behaviors as &lt;data&gt; tags. Please read through all of them and remove those that don't apply to your app. Finally, set the value of "verified" to true to mark that you're done with this library.
+<br>
+<br>
+Example of part of a library config file:
+<br>
+<img src="https://user-images.githubusercontent.com/7195867/176574413-18c8b55b-da91-425c-bd4d-19740318d2d8.png" alt="Verify library config example" width="900">

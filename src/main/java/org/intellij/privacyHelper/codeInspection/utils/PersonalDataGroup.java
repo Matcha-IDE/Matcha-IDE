@@ -1,0 +1,45 @@
+package org.intellij.privacyHelper.codeInspection.utils;
+
+/**
+ * Created by tianshi on 4/27/17.
+ */
+public enum  PersonalDataGroup {
+    PersonalInfo_Name,
+    PersonalInfo_EmailAddress,
+    PersonalInfo_UserIds,
+    PersonalInfo_Address,
+    PersonalInfo_PhoneNumber,
+    PersonalInfo_RaceAndEthnicity,
+    PersonalInfo_PoliticalOrReligiousBeliefs,
+    PersonalInfo_SexualOrientation,
+    PersonalInfo_OtherPersonalInfo,
+    FinancialInfo_UserPaymentInfo,
+    FinancialInfo_PurchaseHistory,
+    FinancialInfo_CreditScore,
+    FinancialInfo_OtherFinancialInfo,
+    Calendar_CalendarEvents,
+    PhotosAndVideos_Photos,
+    PhotosAndVideos_Videos,
+    Contacts_Contacts,
+    Location_ApproximateLocation,
+    Location_PreciseLocation,
+    HealthAndFitness_HealthInfo,
+    HealthAndFitness_FitnessInfo,
+    Messages_Emails,
+    Messages_SmsOrMms,
+    Messages_InAppMessages,
+    DeviceOrOtherIds_DeviceOrOtherIds,
+    FilesAndDocs_FilesAndDocs,
+    AudioFiles_VoiceOrSoundRecordings,
+    AudioFiles_MusicFiles,
+    AudioFiles_OtherUserAudioFiles,
+    AppActivity_AppInteractions,
+    AppActivity_InstalledApps,
+    AppActivity_InAppSearchHistory,
+    AppActivity_OtherUserGeneratedContent,
+    AppActivity_OtherUserActivities,
+    WebBrowsing_WebBrowsingHistory,
+    AppInfoAndPerformance_CrashLogs,
+    AppInfoAndPerformance_Diagnostics,
+    AppInfoAndPerformance_OtherAppPerformanceData
+}
