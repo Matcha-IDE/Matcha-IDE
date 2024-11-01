@@ -31,7 +31,7 @@ Contributors
 
 Cite our paper
 --------------
-If you find this project helpful to your research, consider citing the following paper:
+If you find this project helpful to your research, consider citing [our paper](https://dl.acm.org/doi/10.1145/3643544):
 ```
 @article{10.1145/3643544,
   author = {Li, Tianshi and Cranor, Lorrie Faith and Agarwal, Yuvraj and Hong, Jason I.},
