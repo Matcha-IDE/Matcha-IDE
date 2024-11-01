@@ -28,3 +28,25 @@ Contributors
 * Mike Czapik (Carnegie Mellon University)
 * Tiffany Yu (Carnegie Mellon University)
 * Elijah Neundorfer (Columbus State University)
+
+Cite our paper
+--------------
+If you find this project helpful to your research, consider citing the following paper:
+```
+@article{10.1145/3643544,
+  author = {Li, Tianshi and Cranor, Lorrie Faith and Agarwal, Yuvraj and Hong, Jason I.},
+  title = {Matcha: An IDE Plugin for Creating Accurate Privacy Nutrition Labels},
+  year = {2024},
+  issue_date = {March 2024},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  volume = {8},
+  number = {1},
+  url = {https://doi.org/10.1145/3643544},
+  doi = {10.1145/3643544},
+  journal = {Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.},
+  month = mar,
+  articleno = {33},
+  numpages = {38}
+}
+```
